@@ -3,7 +3,7 @@
   
   
   
-#Requirements
+# monty - Stacks, Queues - LIFO, FIFO 💥
 For Proyect:
 
 Allowed editors: vi, vim, emacs
