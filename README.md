@@ -3,8 +3,8 @@
   
   
   
-# Requirements 💥
-For Proyect:
+# Requirements ♟️
+
 
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 14.04 LTS
