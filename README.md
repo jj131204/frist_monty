@@ -74,7 +74,7 @@ swap | Swaps the top two elements of the stack
   
 ## Authors  
   
-*Guerra*   
+*Juan jose arteta*   
   
   
 *Adrian camilo guerra* 🎵  
