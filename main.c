@@ -1,11 +1,13 @@
 #include "monty.h"
 
-int main (int ac, char *av[])
+int main(int ac, char *av[])
 {
+	stack_t *stack = NULL;
 	FILE *open;
-	int get = NULL;
-	char *line = NULL;
+	char *line = NULL, *tokens = NULL;
 	size_t bufsize = 0;
+	unsigned int lines = 0;
+
 	if (ac != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
@@ -17,18 +19,12 @@ int main (int ac, char *av[])
 		fprintf(stderr, "Error: Can't open file %s\n", av[1]);
 		return (EXIT_FAILURE);
 	}
-	while(getline(&line, &bufsize, open) != EOF)
+	while (getline(&line, &bufsize, open) != EOF)
 	{
-		
+		lines++;
+		tokens =  strtok(line, DELIMITERS);
+
+		_opcode(tokens, &stack, lines);
 	}
-	/*if (get == -1)
-	{
-		free(line);
-		return (EXIT_FAILURE);
-	}
-	else
-	{
-		while ()
-	}*/
 	return (0);
 }
