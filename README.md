@@ -4,8 +4,10 @@
 #### monty functions as a Monty byte code interpreter. Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it.  
   
   
+  # Requirements ♟️
+  
 
-|     # Requirements ♟️                                                                                                       |                               
+                                                                                                                                 
 | ----------------------------------------------------------------------------------------------------------------------| 
 |**[Allowed editors: vi, vim, emacs                                                                                     |
 |**[All your files will be compiled on Ubuntu 14.04 LTS**                                                               |
