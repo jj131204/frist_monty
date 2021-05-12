@@ -56,6 +56,8 @@ typedef struct instruction_s
 int main(int av, char *ac[]);
 void _opcode(char *line, stack_t **stack, unsigned int lines_num);
 void _pall(stack_t **stack, unsigned int line_number);
+stack_t *new_Node(int n);
 void _push(stack_t **stack, unsigned int line_number);
+
 
 #endif
