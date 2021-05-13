@@ -25,10 +25,11 @@ int _opcode(char *line, stack_t **stack, unsigned int lines_num)
 		{"add", _add},
 		{"nop", _nop},
 		{"sub", _sub},
+		{"div", _div},
 		{NULL, NULL}
 	};
 
-	while (count < 8)
+	while (count < 9)
 	{
 		if (strcmp(specifiers[count].opcode, line) == 0)
 		{
