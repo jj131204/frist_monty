@@ -11,7 +11,6 @@ void _push(stack_t **stack, unsigned int line_num)
 {
 	char *value = strtok(NULL, DELIMITERS);
 	stack_t *new_node;
-	int i = 0;
 
 	if (!stack)
 	{
