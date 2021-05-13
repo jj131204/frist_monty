@@ -37,7 +37,7 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 
 	if (!specifiers[count].opcode)
 	{
-		fprintf(stderr, "l%u: unknown instruction %s\n", lines_num, line);
+		fprintf(stderr, "L%u: unknown instruction %s\n", lines_num, line);
 		exit(EXIT_SUCCESS);
 	}
 }
