@@ -2,25 +2,15 @@
 #define MONTY_H
 
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <ctype.h>
 
 #define DELIMITERS "\n\t\r "
-
-/**
- * struct glob_vars - struct for global variables
- * @glob_int: integer
- *
- * Description: structure that contains the variables
- * shared across the whole program
- */
-typedef struct glob_vars
-{
-	int glob_int;
-} glob_t;
-
-extern glob_t glob_vars;
-glob_t glob_vars;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -58,6 +48,6 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num);
 void _pall(stack_t **stack, unsigned int line_number);
 stack_t *new_Node(int n);
 void _push(stack_t **stack, unsigned int line_number);
-
+void free_stack(stack_t *stack);
 
 #endif
