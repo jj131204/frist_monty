@@ -50,4 +50,6 @@ stack_t *new_Node(int n);
 void _push(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_num);
 
+/*free*/
+void free_stack(stack_t *stack);
 #endif

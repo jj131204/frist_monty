@@ -36,5 +36,8 @@ int main(int argc, char *argv[])
 			_opcode(tokens, &stack, lines);
 		lines++;
 	}
+	free(line);
+	fclose(open);
+	free_stack(stack);
 	return (0);
 }
