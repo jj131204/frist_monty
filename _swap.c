@@ -13,7 +13,7 @@ void _swap(stack_t **stack, unsigned int line_number)
 	int _stack = 0;
 	stack_t *tmp = *stack;
 
-	if (!stack || !(*stack)->next)
+	if (!stack || (*stack)->next == NULL)
 	{
 		fprintf(stderr, "L%d: Need to use line_num\n", line_number);
 		exit(EXIT_FAILURE);
