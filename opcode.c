@@ -17,20 +17,19 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 	instruction_t specifiers[] = {
 		{"pall", _pall},
 		{"push", _push},
-		/*
-		*{"swap", _swap},
+		 {"pint", _pint},
+/*		{"swap", _swap},
 		*{"add",  _add},
-		*{"pint", _pint}
 */
 		{NULL, NULL}
 	};
 
-	while (count < 2)
+	while (count < 3)
 	{
 		if (strcmp(specifiers[count].opcode, line) == 0)
 		{
 			specifiers[count].f(stack, lines_num);
-			exit(EXIT_SUCCESS);
+			break;
 		}
 		count++;
 	}

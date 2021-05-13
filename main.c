@@ -10,7 +10,7 @@
  *Return: 0
  */
 
-int main(int ac, char *av[])
+int main(int argc, char *argv[])
 {
 	stack_t *stack = NULL;
 	FILE *open;
@@ -18,22 +18,23 @@ int main(int ac, char *av[])
 	size_t bufsize = 0;
 	unsigned int lines = 0;
 
-	if (ac != 2)
+	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	open = fopen(av[1], "r");
+	open = fopen(argv[1], "r");
 	if (open == NULL)
 	{
-		fprintf(stderr, "Error: Can't open file %s\n", av[1]);
+		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 	while (getline(&line, &bufsize, open) != EOF)
 	{
-		lines++;
 		tokens =  strtok(line, DELIMITERS);
-		_opcode(tokens, &stack, lines);
+		if (tokens != NULL && tokens[0] != '#')
+			_opcode(tokens, &stack, lines);
+		lines++;
 	}
 	return (0);
 }
