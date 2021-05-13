@@ -1,5 +1,15 @@
 #include "monty.h"
 
+/**
+ * _opcode - Function for select de parameters (spacifiers)
+ *
+ *@line: Entry parameter.
+ *
+ *@stack: Double pointer to the head of the Stack.
+ *
+ *@lines_num: number of the line
+ */
+
 void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 {
 	unsigned int count = 0;
@@ -7,9 +17,11 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 	instruction_t specifiers[] = {
 		{"pall", _pall},
 		{"push", _push},
-		/*{"swap", _swap},
-		{"add",  _add},
-		{"pint", _pint}*/
+		/*
+		*{"swap", _swap},
+		*{"add",  _add},
+		*{"pint", _pint}
+*/
 		{NULL, NULL}
 	};
 
