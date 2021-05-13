@@ -3,7 +3,7 @@
 /**
  * _swap -  swaps the top two elements of the stack.
  *
- *@stack:  Double pointer to the head of the Stack. 
+ *@stack:  Double pointer to the head of the Stack.
  *
  *@line_number:  Number of the line.
  */
