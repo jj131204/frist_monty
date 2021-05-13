@@ -20,16 +20,6 @@ void _push(stack_t **stack, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
 
-	while (value[i] != '\0')
-	{
-	if (!isdigit(value[i]))
-	{
-		dprintf(STDOUT_FILENO, "L%u: usage: push integer\n", line_num);
-		exit(EXIT_FAILURE);
-	}
-		i++;
-	}
-
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
 	{
