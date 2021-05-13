@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	FILE *open;
 	char *line = NULL, *tokens = NULL;
 	size_t bufsize = 0;
-	unsigned int lines = 0;
+	unsigned int lines = 1;
 
 	if (argc != 2)
 	{
