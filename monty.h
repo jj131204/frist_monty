@@ -43,12 +43,16 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/*global variable(Push)*/
+int n;
+
 int main(int argv, char *argc[]);
 void _opcode(char *line, stack_t **stack, unsigned int lines_num);
 void _pall(stack_t **stack, unsigned int line_number);
-stack_t *new_Node(int n);
 void _push(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_num);
+void _pop(stack_t **stack, unsigned int line_number);
+
 
 /*free*/
 void free_stack(stack_t *stack);
