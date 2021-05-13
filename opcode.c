@@ -17,10 +17,7 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 	instruction_t specifiers[] = {
 		{"pall", _pall},
 		{"push", _push},
-		 {"pint", _pint},
-/*		{"swap", _swap},
-		*{"add",  _add},
-*/
+		{"pint", _pint},
 		{NULL, NULL}
 	};
 

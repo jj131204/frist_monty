@@ -3,9 +3,9 @@
 /**
  * main - principal function(monty interpreter)
  *
- *@ac: the number of arguments
+ *@argc: the number of arguments
  *
- *@av: the arguments
+ *@argv: the arguments
  *
  *Return: 0
  */
