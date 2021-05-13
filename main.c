@@ -36,9 +36,5 @@ int main(int ac, char *av[])
 		if (tokens != NULL  && tokens[0] != '#')
 			_opcode(tokens, &stack, lines);
 	}
-
-	free(line);
-	fclose(open);
-	free_stack(stack);
 	return (0);
 }
