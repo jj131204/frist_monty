@@ -10,7 +10,7 @@
  *@lines_num: number of the line
  */
 
-void _opcode(char *line, stack_t **stack, unsigned int lines_num)
+int _opcode(char *line, stack_t **stack, unsigned int lines_num)
 {
 	unsigned int count = 0;
 
@@ -30,7 +30,7 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 		if (strcmp(specifiers[count].opcode, line) == 0)
 		{
 			specifiers[count].f(stack, lines_num);
-			break;
+			return (EXIT_SUCCESS);
 		}
 		count++;
 	}
@@ -40,4 +40,5 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 		fprintf(stderr, "L%u: unknown instruction %s\n", lines_num, line);
 		exit(EXIT_SUCCESS);
 	}
+	return (EXIT_SUCCESS);
 }

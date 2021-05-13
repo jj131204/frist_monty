@@ -47,7 +47,7 @@ typedef struct instruction_s
 int n;
 
 int main(int argv, char *argc[]);
-void _opcode(char *line, stack_t **stack, unsigned int lines_num);
+int _opcode(char *line, stack_t **stack, unsigned int lines_num);
 void _pall(stack_t **stack, unsigned int line_number);
 void _push(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
