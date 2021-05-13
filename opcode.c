@@ -8,6 +8,8 @@
  *@stack: Double pointer to the head of the Stack.
  *
  *@lines_num: number of the line
+ *
+ *Return: exit_success
  */
 
 int _opcode(char *line, stack_t **stack, unsigned int lines_num)
