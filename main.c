@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	while (getline(&line, &bufsize, open) != EOF)
 	{
 		tokens =  strtok(line, DELIMITERS);
-		if (tokens != NULL && tokens[0] != '#')
+	/*	if (tokens != NULL && tokens[0] != '#')*/
 			_opcode(tokens, &stack, lines);
 		lines++;
 	}

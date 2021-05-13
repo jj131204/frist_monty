@@ -18,13 +18,14 @@ void _opcode(char *line, stack_t **stack, unsigned int lines_num)
 		{"pall", _pall},
 		{"push", _push},
 		{"pint", _pint},
-		{"pop", _pop},
+		{"pop",  _pop},
+		{"swap", _swap},
 		{"add", _add},
 		{"nop", _nop},
 		{NULL, NULL}
 	};
 
-	while (count < 6)
+	while (count < 7)
 	{
 		if (strcmp(specifiers[count].opcode, line) == 0)
 		{
