@@ -11,7 +11,7 @@ void free_stack(stack_t *stack)
 
 	if (tmp != NULL)
 	{
-		stack = stack->next;
+		free_stack(tmp->next);
 		free(tmp);
 	}
 }
