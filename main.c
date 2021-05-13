@@ -33,8 +33,7 @@ int main(int ac, char *av[])
 	{
 		lines++;
 		tokens =  strtok(line, DELIMITERS);
-		if (tokens != NULL  && tokens[0] != '#')
-			_opcode(tokens, &stack, lines);
+		_opcode(tokens, &stack, lines);
 	}
 	return (0);
 }
