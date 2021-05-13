@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 	}
 	free(line);
 	fclose(open);
-	free_stack(stack);
-	return (0);
+	if (stack)
+		free_stack(stack);
+	return (EXIT_SUCCESS);
 }
