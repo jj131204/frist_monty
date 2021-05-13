@@ -5,15 +5,15 @@
  *
  * @stack: Double pointer to the head of the Stack.
  *
- * @line_num: Number of the line.
+ * @line_number: Number of the line.
  *
  */
 
-void _pint(stack_t **stack, unsigned int line_num)
+void _pint(stack_t **stack, unsigned int line_number)
 {
 	if (!stack)
 	{
-		fprintf(stderr, "L%d: can't pint, stack empty", line_num);
+		fprintf(stderr, "L%d: can't pint, stack empty", line_number);
 		exit(EXIT_FAILURE);
 	}
 	else

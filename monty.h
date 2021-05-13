@@ -50,10 +50,10 @@ int main(int argv, char *argc[]);
 void _opcode(char *line, stack_t **stack, unsigned int lines_num);
 void _pall(stack_t **stack, unsigned int line_number);
 void _push(stack_t **stack, unsigned int line_number);
-void _pint(stack_t **stack, unsigned int line_num);
+void _pint(stack_t **stack, unsigned int line_number);
 void _pop(stack_t **stack, unsigned int line_number);
-
-
+void _add(stack_t **stack, unsigned int line_number);
+void _nop(stack_t **stack, unsigned int line_number);
 /*free*/
 void free_stack(stack_t *stack);
 #endif
