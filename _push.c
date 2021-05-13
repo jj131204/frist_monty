@@ -11,12 +11,23 @@ void _push(stack_t **stack, unsigned int line_num)
 {
 	char *value = strtok(NULL, DELIMITERS);
 	stack_t *new_node;
+	int i = 0;
 
 	if (!stack)
 	{
 		fprintf(stderr, "L%d: Need to use line_num\n", line_num);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
+	}
+
+	while (value[i] != '\0')
+	{
+	if (!isdigit(value[i]))
+	{
+		fprintf(stderr, "L%u: usage: push integer\n", line_num);
+		exit(EXIT_FAILURE);
+	}
+		i++;
 	}
 
 	new_node = malloc(sizeof(stack_t));
