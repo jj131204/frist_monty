@@ -1,5 +1,16 @@
 [![](https://www.holbertonschool.com/holberton-logo.png)](https://www.holbertonschool.com/)
 
+
+
+<h2>How to use it</h2>
+
+- Clone this repository into your OS with [monty´s](https://github.com/jj131204/monty)
+ 
+- Compiler :  `GCC version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4)`
+
+-  Compile:  `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
+-   Run:  `./monty [monty_file]`
+
 # monty - Stacks, Queues - LIFO, FIFO 💥
 #### monty functions as a Monty byte code interpreter. Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it.
 
