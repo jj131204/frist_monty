@@ -22,10 +22,11 @@ int _opcode(char *line, stack_t **stack, unsigned int lines_num)
 		{"pint", _pint},
 		{"pop",  _pop},
 		{"swap", _swap},
-		{"add", _add},
-		{"nop", _nop},
-		{"sub", _sub},
-		{"div", _div},
+		{"add",  _add},
+		{"nop",  _nop},
+		{"sub",  _sub},
+		{"div",  _div},
+		{"mull", _mul},
 		{NULL, NULL}
 	};
 
